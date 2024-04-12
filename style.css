@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; background-color: #F4F4F4; margin: 0; padding: 20px; color: #333; }
+h2, h3, h4 { color: #007BFF; }
+#quiz, #result, #viableOptions { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.question p, #result p, #viableOptions ul { font-size: 16px; margin-bottom: 15px; }
+label { display: block; background: #F9F9F9; border: 1px solid #ddd; padding: 10px 15px; margin-bottom: 10px; cursor: pointer; border-radius: 5px; transition: all 0.3s ease; }
+label:hover, button:hover { background-color: #F1F1F1; }
+input[type="radio"] { margin-right: 10px; }
+button { background-color: #28A745; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
+.swapBtn { background-color: #007BFF; padding: 5px 10px; margin-top: 5px; font-size: 14px; color: white; border-radius: 5px; cursor: pointer; display: inline-block; }
+.swapBtn:disabled { background-color: #ccc; }
+.card-container { display: flex; align-items: center; margin-bottom: 10px; }
+.card-image { width: 50px; height: auto; margin-right: 10px; }
