@@ -235,9 +235,15 @@ var allCards = [
 var userCardTypePreference = "Offensive";
 var userStrategyPreference = "Fast-paced attacks";
 function generateCustomDeckRecommendation(cardTypePreference, strategyPreference) {
-    var filteredCards = allCards.filter(function(card) {
+    /*var filteredCards = allCards.filter(function(card) {
         return card.type === cardTypePreference && card.strategy === strategyPreference;
-    });
+    });*/
+    var filteredcards=[]; 
+    for(i=0; i<allCards.length; i++) {
+        if(allCards[i].type === cardTypePreference && allCards[i].strategy === strategyPreference) {
+            filteredcards.push(allCards[i]);
+        }
+    }
     var recommendedDeck = filteredCards.map(function(card) {
         return card.name;
     }).join(', ')
